@@ -42,7 +42,7 @@
 				'event_date' => $this->input->post('event_date'),
 				'event_description' => $this->input->post('event_description')
 			);
-		$this->db->where('event_id', $this->input->event('event_id'));	
+		$this->db->where('event_id', $this->input->post('event_id'));	
 		return $this->db->update('events', $data);
 		}
 	}
