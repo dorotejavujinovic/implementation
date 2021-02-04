@@ -53,7 +53,7 @@ class Choreographies extends CI_Controller {
         $rowsCount = $this->member->getRows($conditions);
         
         // Pagination config
-        $config['base_url']    = base_url().'members/index/';
+        $config['base_url']    = base_url().'choreographies/index/';
         $config['uri_segment'] = 3;
         $config['total_rows']  = $rowsCount;
         $config['per_page']    = $this->perPage;
